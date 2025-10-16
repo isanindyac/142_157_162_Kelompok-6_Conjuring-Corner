@@ -1,10 +1,6 @@
 # 142_157_162_Kelompok-6_Conjuring-Corner
 Website ini dapat menampilkan review dari seluruh universal film The Conjuring dan dapat menambahkan input review dari pengguna.
 
-Berikut contoh **README.md** yang cocok untuk menjelaskan isi dan fungsi file `index.html` kamu agar terlihat profesional di GitHub 👇
-
----
-
 # 🕯️ The Conjuring Universe Reviews — Landing Page
 
 Proyek ini merupakan halaman beranda (`index.html`) dari situs **The Conjuring Universe Reviews**, sebuah website bertema horor yang membahas dan mengulas film-film dalam **The Conjuring Universe** secara estetis dan responsif.
