@@ -102,6 +102,129 @@ Tahun pada footer akan diperbarui otomatis melalui JavaScript.
 > ![Preview Hero Section](the%20conjuring%20univers.jpg)
 > *Tampilan hero section pada halaman utama.*
 
+# Halaman Tentang Kami - The Conjuring Universe Reviews
+
+Halaman "Tentang Kami" memberikan informasi lengkap mengenai misi, visi, dan prinsip editorial dari situs The Conjuring Universe Reviews.
+
+## 📋 Deskripsi
+
+Halaman ini dirancang untuk memperkenalkan identitas situs kepada pengunjung, menjelaskan pendekatan kurasi konten, serta menyampaikan komitmen terhadap transparansi dan aksesibilitas.
+
+## ✨ Fitur Utama
+
+### 1. **Identitas Tim**
+- Penjelasan tentang tim penggemar film horor
+- Misi untuk berbagi review jujur dan pandangan pribadi
+- Tujuan membantu penonton memahami The Conjuring Universe lebih dalam
+
+### 2. **Prinsip Editorial**
+Tiga pilar utama:
+- **Transparansi**: Sumber rating dan ringkasan dijelaskan dengan jelas
+- **Konsistensi**: Gaya visual biru, tipografi rapi, dan kontras terjaga
+- **Aksesibilitas**: Navigasi jelas, alt text deskriptif, dan fokus yang terlihat
+
+### 3. **Struktur Konten**
+Penjelasan format standar setiap review film:
+- Sinopsis singkat yang padat
+- Tahun rilis dan informasi kategori
+- Rating ringkas untuk referensi cepat
+- Tag tematik untuk navigasi mudah
+
+### 4. **Latar Belakang**
+Penjelasan mengapa The Conjuring Universe dipilih sebagai fokus, mencakup:
+- Kesuksesan jagat sinematik horor
+- Koneksi dari kisah nyata Ed dan Lorraine Warren
+- Keterkaitan unik antar film dalam universe
+
+## 🎨 Desain & Styling
+
+### CSS Khusus Halaman
+```css
+/* Padding optimal untuk konten dalam card */
+.prose .card > h2 + p,
+.prose .card > h3 + p,
+.prose .card > h3 + ul {
+  padding: 1.25rem 1.5rem;
+}
+
+/* Indentasi bullet list yang rapi */
+.prose .card > h3 + ul { 
+  padding-left: 1.4rem; 
+}
+```
+
+### Elemen Visual
+- **Layout**: Card-based dengan max-width 800px
+- **Spacing**: Margin dan padding yang konsisten
+- **Typography**: Heading hierarchy yang jelas (h2, h3)
+- **Color Scheme**: Konsisten dengan tema biru (#021024)
+
+## 🏗️ Struktur HTML
+```
+<header>
+  └── Navigasi dengan link aktif pada "Tentang Kami"
+
+<main>
+  └── <article class="reveal">
+      └── <div class="card">
+          ├── Siapa kami?
+          ├── Prinsip Kami (list)
+          ├── Struktur Konten (list)
+          └── Mengapa The Conjuring Universe?
+
+<footer>
+  └── Copyright dengan tahun dinamis
+```
+
+## ♿ Aksesibilitas
+
+- **Skip Link**: Navigasi cepat ke konten utama
+- **ARIA Labels**: `aria-current="page"` untuk halaman aktif
+- **Semantic HTML**: Penggunaan tag `<article>`, `<nav>`, `<header>`
+- **Meta Description**: Deskripsi halaman yang jelas untuk SEO
+- **Theme Color**: Meta tag untuk mobile browser (#021024)
+
+## 📱 Responsive Design
+
+- Meta viewport untuk mobile optimization
+- Container dan card yang adaptif
+- Navigasi toggle untuk layar kecil
+- Typography yang scalable
+
+## 🔗 Navigasi
+
+Terintegrasi dengan halaman lain:
+- `/index.html` - Beranda
+- `/tentang.html` - Tentang Kami (halaman aktif)
+- `/review.html` - Review
+- `/kontak.html` - Kontak
+
+## 📦 Dependencies
+
+- `/assets/styles.css` - Stylesheet global
+- `/assets/app.js` - JavaScript untuk interaktivitas (navigation toggle, dynamic year)
+
+## 🎯 Tujuan Halaman
+
+1. Membangun kredibilitas dan kepercayaan pengunjung
+2. Menjelaskan standar kualitas konten
+3. Menyampaikan komitmen terhadap user experience
+4. Memberikan konteks tentang fokus niche situs
+
+## 💡 Best Practices
+
+- **Content First**: Informasi penting di awal
+- **Scannable Content**: Penggunaan heading dan list untuk readability
+- **Visual Hierarchy**: Spacing dan typography yang jelas
+- **Brand Consistency**: Tone dan style sesuai tema horor
+
+## 🔄 Update & Maintenance
+
+- Periksa link navigasi secara berkala
+- Update informasi jika ada perubahan prinsip editorial
+- Pastikan copyright year ter-update otomatis via JavaScript
+- Review konten untuk akurasi dan relevansi
+
 ---
 
-Apakah kamu ingin saya tambahkan bagian **“Kontributor”** dan **“Lisensi”** juga agar README-nya lebih lengkap untuk GitHub publik?
+**Catatan**: Halaman ini menggunakan bahasa Indonesia (lang="id") dan dioptimasi untuk pengalaman pengguna lokal.
